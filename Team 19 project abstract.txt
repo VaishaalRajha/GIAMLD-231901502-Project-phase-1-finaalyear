@@ -1,0 +1,11 @@
+ABSTRACT
+
+Money laundering is a major financial-security problem involving complex transaction patterns, multiple accounts and movement of funds through interconnected networks. Traditional Anti-Money Laundering (AML) systems often analyze transactions independently using predefined rules and thresholds, which may fail to identify relationships between suspicious accounts.
+
+This project proposes a Graph-Based Anti-Money Laundering Detection System using a Graph Convolutional Network (GCN). Financial accounts are represented as graph nodes, while transactions between accounts are represented as directed edges. Transaction behaviour is transformed into account-level features, and the GCN learns information from neighbouring accounts to identify potentially suspicious accounts.
+
+The system is implemented using Python, PyTorch/PyTorch Geometric, NetworkX, Pandas and Streamlit. The Streamlit dashboard provides dataset exploration, model training and evaluation, transaction analysis, network visualization, risk analysis and report/export functionality.
+
+The current implementation processes 200,000 transactions, including 147 fraudulent transaction records. The trained model achieved an accuracy of 99.94%, precision of 25.00%, recall of 3.03%, F1-score of 5.41%, and ROC-AUC of 71.95%. Due to the highly imbalanced synthetic dataset, accuracy alone is not considered sufficient for evaluating AML effectiveness.
+
+The proposed system demonstrates how graph-based machine learning can support suspicious-account identification and investigation by combining transaction behaviour with relationships between accounts.
